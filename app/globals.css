@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.sharp-font {
+  font-family: var(--font-sharp);
+}
+ 
+
+body{
+  background-color: white;
+  font-family: var(--font-general-sans);
+}
+
+.fa-icon {
+  font-size: 18px !important;
+}
+
+.tech_skills li{
+    padding: 8px 20px;
+    box-shadow: 4px 4px;
+    border: 1px solid black;
+}
