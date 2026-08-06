@@ -19,3 +19,12 @@ body{
     box-shadow: 4px 4px;
     border: 1px solid black;
 }
+
+nav ul li{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p{
+  line-height: 28px;
+}

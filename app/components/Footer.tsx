@@ -38,7 +38,7 @@ const Footer = () => {
         <FaEnvelope />
       </a>
 
-      <a 
+      {/* <a 
         href="https://substack.com/@muneebhk" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const Footer = () => {
         aria-label="Substack"
       >
         <SiSubstack />
-      </a>
+      </a> */}
 
     </div>
   );

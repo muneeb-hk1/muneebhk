@@ -2,6 +2,13 @@ import Link from "next/link"
 
 const projectData = [
     {
+        title: `<b>Webuildex</b>`,
+        link: "https://webuildex.vercel.app/",
+        des1: ` Engineered a high-performance browser-based visual editor using customized DOM manipulation hooks and state
+synchronization, cutting live <b>visual re-render latency by 45%</b>`,
+        des2: `<b>Product-Led Storytelling:</b> Instead of listing abstract features, it shows real UI mockups and step-by-step outcomes from input prompt to live site.`
+    },
+    {
         title: `<b>ETA Visa Application</b>`,
         link: "https://etacard.vercel.app/",
         des1: `Engineered a scalable and high-performance <b>ETA Visa application</b> using Next.js and TypeScript. The platform streamlines the entire travel documentation intake process with a strong focus on modern component architecture, clean state management, and premium user experience.`,
@@ -36,10 +43,10 @@ const projectData = [
 export default function projects() {
     return (
         <>
-            <div className="pt-10 pb-3">
+            <div className="pt-10">
                 {projectData.map((data, index) => (
-                    <div key={index} className="mb-18">
-                        <div className="flex justify-between items-center mb-3">
+                    <div key={index} className="mb-10">
+                        <div className="flex justify-between items-center mb-4">
                             <h2 dangerouslySetInnerHTML={{ __html: `${data.title}` }} className="underline" />
                             <Link href={data.link} className="underline text-blue-600">view here</Link>
                         </div>

@@ -46,7 +46,7 @@ export default function RootLayout({
       <body className={`min-h-full flex flex-col ${sharpGrotesk.variable} ${generalSans.variable}`}>
        
         <div className="w-full flex justify-center">
-        <div className="w-[calc(100%-10%)]">
+        <div className="w-[calc(100%-10%)] md:w-[calc(100%-55%)]">
           {children}
           
         </div>
