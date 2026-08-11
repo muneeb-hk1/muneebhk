@@ -2,24 +2,21 @@ const expData = [
     {
         company: "CSS Founder",
         period: "June 2024 - Present",
-        des1: `Architecting a scalable <b>ETA Visa application</b> utilizing Next.js, focusing on optimized web performance, strict TypeScript
-                        interfaces, and premium responsive design. <b>Engineering frontend features for VisitsVisa  </b>, a high-volume platform handling
-                        thousands of daily users, driving improvements in core web vitals and overall user retention.`,
-        des2: `Managing a dynamic queue of <b>client-facing web products</b>, ensuring timely delivery of maintainable UI components, fluid
-                        animations, and <b>robust API integrations.</b>`
+        des1: `Developed a <b>template-based website builder</b> with <b>20+</b> reusable page sections, allowing users to edit content and
+restructure pages through drag and drop. Built the state management and component rendering flow to keep the
+editor and website preview synchronized as users modify section content, visibility, and order.
+`,
+        des2: `Handled <b>project requirements directly</b> with team members and clients, turning functional specifications into clean,
+working frontend code that <b>matched expected features.</b>`
     }, {
         company: "Get Web India",
         period: "Jan 2023 - Apr 2024",
-        des1: `Implementing <b>performance optimizations</b> & best practices to ensure fast, efficient, and reliable applications.`,
-        des2: `Developing and maintaining <b>pixel-perfect UI components</b> that not only align precisely with design specifications but also
-enhance usability, interactivity, and <b>overall visual appeal</b>, ensuring users enjoy a seamless digital experience.`
-    },
-    {
-        company: "My Growthacking",
-        period: "Oct 2022 - Dec 2022",
-        des1: `Learned modern frontend development practices, reusable components, and <b>clean coding standards</b> while working on real
-projects.`,
-        des2: `Worked with designers and developers to convert UI designs into <b>interactive web interfaces.</b>`
+        des1: `<b>Converted Figma designs</b> into responsive, pixel-perfect interfaces while ensuring cross-browser compatibility
+and consistent user experience.
+`,
+        des2: `Built modular <b>UI components</b> used across multiple client websites to speed up development time. Fixed layout
+bugs and <b>cross-browser styling issues</b> across Chrome, Firefox, and Safari.
+`
     }
 ]
 

@@ -4,15 +4,15 @@ const projectData = [
     {
         title: `<b>Webuildex</b>`,
         link: "https://webuildex.vercel.app/",
-        des1: ` Engineered a high-performance browser-based visual editor using customized DOM manipulation hooks and state
-synchronization, cutting live <b>visual re-render latency by 45%</b>`,
-        des2: `<b>Product-Led Storytelling:</b> Instead of listing abstract features, it shows real UI mockups and step-by-step outcomes from input prompt to live site.`
+        des1: `Built a <b>drag-and-drop website builder</b> with Next.js and TypeScript, supporting <b>10+</b> templates and <b>30+</b> editable page components.`,
+        des2: `Implemented visual section reordering, component editing, and synchronized <b>live previews without page reloads</b>.`
     },
     {
         title: `<b>ETA Visa Application</b>`,
         link: "https://etacard.vercel.app/",
-        des1: `Engineered a scalable and high-performance <b>ETA Visa application</b> using Next.js and TypeScript. The platform streamlines the entire travel documentation intake process with a strong focus on modern component architecture, clean state management, and premium user experience.`,
-        des2: `I significantly optimized performance by implementing <b>Static Site Generation (SSG)</b> along with dynamic route <b>lazy-loading</b>. These improvements drastically minimized initial page load times and ensured instantaneous UI responsiveness, even on slower mobile networks and low-bandwidth conditions.`
+        des1: `Built a <b>5-step ETA visa application flow</b> across <b>12 screens</b> using Next.js, with Redux Toolkit for cross-step form
+state, client-side validation, conditional form fields, document uploads, and step-based navigation.`,
+        des2: `I significantly optimized performance by implementing <b>Static Site Generation (SSG)</b> along with dynamic route <b>lazy-loading</b>.`
     },
     {
         title: `<b>Visitsvisa</b>`,
