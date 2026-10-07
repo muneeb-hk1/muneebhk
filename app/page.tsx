@@ -1,26 +1,39 @@
-import Link from "next/link"
+﻿import ContactLinks from "./components/ContactLinks";
+import ProjectGrid from "./components/ProjectGrid";
+import { eyebrow, interactive, muted, pageTitle } from "./lib/styles";
 
 export default function Home() {
   return (
     <>
-      
-      
-       <section className="bg-white-50 pt-14 pb-8">
-            <div className=" flex flex-col gap-5">
-              <h1 className="sharp-font text-2xl underline">About</h1>
-              <p>Hi, I’m Muneeb, a <b>Frontend Software Engineer</b> with <b>3+ years</b> of experience, focused on building scalable, test-ready, and user-centric interfaces for modern SaaS products.</p>
-
-              <p>Started my career in 2023 as an intern at <b>Get Web India</b>, earning a full-time Frontend UI Developer role within <b>1.4 years</b>. In 2024, I joined <b>CSS Founder</b>, where strong execution and technical impact led to a promotion from Frontend UI Developer to <b>Frontend Software Engineer</b>.</p>
-
-      <p className="hidden">My career began at <b><span className="underline">Get Web India</span></b>, where I grew from Intern to full-time Frontend Developer over 1.4 years. In <b>April 2024</b>, I joined <b><span className="underline">CSS Founder</span></b>, progressing from Junior UI Developer to <b className="underline">Frontend Software Engineer</b>. I specialize in building dynamic, highly interactive web applications—including AI-powered interfaces—by integrating complex APIs, writing robust frontend logic, and managing application state.</p>
-
-              <p>Much of my growth has come from staying <b>close to users—joining calls</b>, listening to their stories, and deeply understanding their pain points. These real conversations continuously shape my approach, helping me <b>build interfaces</b> with more clarity, empathy, and intent.</p>
-              <Link href="https://muneeb-hk1.github.io/resume/muneeb_sde_resume.pdf" className="italic underline" target="_blank">resume link</Link>
-
-             
-            </div>
-          </section>
-
+      <section className="pt-[65px] min-[701px]:pt-[106px]" aria-labelledby="intro-title">
+       
+        <p className={eyebrow}></p>
+        <h1 id="intro-title" className={pageTitle}>Hola, I’m Muneeb.</h1>
+        <p className={`max-w-[825px] text-lg leading-[29px] min-[701px]:text-xl min-[701px]:leading-[31px] ${muted}`}>
+          I turn designs into working websites, from visual editors to travel applications. My focus is on clear navigation, thoughtful details, and pages that feel comfortable on any screen.
+        </p>
+         <ul className="mt-[26px] mb-[30px] flex flex-wrap gap-x-[22px] gap-y-3 text-xs leading-[22px] tracking-[0.5px] text-[#838895] uppercase min-[701px]:mt-[31px] min-[701px]:mb-9 min-[701px]:gap-x-8 min-[701px]:text-sm" aria-label="Experience highlights">
+          <li>Frontend Software Engineer</li>
+          <li>3+ years of experience</li>
+        </ul>
+        <ContactLinks />
+      </section>
+      <section id="about" className="mt-[60px] scroll-mt-8 min-[801px]:mt-[70px]" aria-labelledby="about-title">
+        <h2 className={`mb-[25px] flex gap-[22px] ${eyebrow}`} id="about-title"><span>01</span> About</h2>
+        <div className={`max-w-[1060px] space-y-4 text-md leading-6 ${muted}`}>
+          <p>
+            I started at <strong className="font-semibold text-[#1b1b1d] [html[data-theme=dark]_&]:text-[#ededee]">Get Web India</strong> in 2023, moving from an internship into a full-time UI role. At <strong className="font-semibold text-[#1b1b1d] [html[data-theme=dark]_&]:text-[#ededee]">CSS Founder</strong>, I grew into frontend engineering, working on page builders, forms, and reusable components.
+          </p>
+          <p>
+            Conversations with customers shape how I work. I listen for where they get stuck, ask questions, and use that feedback to make the next iteration easier to use.
+          </p>
+          <a className={`inline-flex min-h-11 items-center gap-2 text-[#1b1b1d] underline decoration-[#838895] underline-offset-4 [html[data-theme=dark]_&]:text-[#ededee] ${interactive}`} href="https://muneeb-hk1.github.io/resume/muneeb_sde_resume.pdf" target="_blank" rel="noopener noreferrer">Read my résumé <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      <section id="projects" className="mt-[60px] scroll-mt-8 min-[701px]:mt-[70px]" aria-labelledby="projects-title">
+        <h2 className={`mb-[25px] flex gap-[22px] ${eyebrow}`} id="projects-title"><span>02</span> Projects</h2>
+        <ProjectGrid />
+      </section>
     </>
   );
 }

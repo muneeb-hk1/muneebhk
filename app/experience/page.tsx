@@ -1,3 +1,5 @@
+import { bodyCopy, border, eyebrow, pageTitle } from "../lib/styles";
+
 const expData = [
     {
         company: "CSS Founder",
@@ -24,20 +26,22 @@ export default function experience() {
     return (
         <>
 
-            <div>
+            <section className="pt-[65px] min-[701px]:pt-[95px]" aria-labelledby="experience-title">
+                <p className={eyebrow}>Where I’ve worked</p>
+                <h1 id="experience-title" className={pageTitle}>Experience</h1>
                 {expData.map((exp, index) => (
-                    <div key={index} className="pt-10 pb-4 border-b border-gray-300">
-                        <div className="flex justify-between items-center mb-3">
-                            <h1 className="text font-bold border-b">{exp.company}</h1>
-                            <p className="text-sm">{exp.period}</p>
+                    <div key={index} className={`border-b pt-10 pb-6 ${border}`}>
+                        <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2">
+                            <h2 className="text-xl leading-7 font-normal">{exp.company}</h2>
+                            <p className="text-xs leading-[22px] tracking-[1px] text-[#838895] uppercase">{exp.period}</p>
                         </div>
-                        <div>
+                        <div className={`space-y-3 ${bodyCopy}`}>
                             <p dangerouslySetInnerHTML={{ __html: `• ${exp.des1}` }} />
                             <p dangerouslySetInnerHTML={{ __html: `• ${exp.des2}` }} />
                         </div>
                     </div>
                 ))}
-            </div>
+            </section>
 
 
 

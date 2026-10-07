@@ -1,32 +1,15 @@
-export default function Skills(){
-    return(
-        <>
-        <div className="py-5">
+import { border, eyebrow, muted, pageTitle } from "../lib/styles";
 
-            <ul className="flex flex-wrap gap-4 tech_skills mt-5">
-                <li>React.js</li>
-                <li>Next.js</li>
-                <li>Redux Toolkit</li>
-                <li>Javascript</li>
-                <li>TypeScript</li>
-                <li>Chart.js</li>
-                <li>Rest API</li>
-                <li>Html 5</li>
-                <li>CSS 3</li>
-                <li>Tailwind CSS</li>
-                <li>Material UI</li>
-                <li>Ant Design</li>
-                <li>GSAP</li>
-                <li>Bootstrap</li>
-                <li>Figma</li>
-                <li>Git</li>
-                <li>Github</li>
-                <li>Browser Dev Tools</li>
-                {/* <li>CI/CD Pipelines Design</li>
-                <li>Mongo DB</li> */}
-                {/* <li>MySql</li> */}
-            </ul>
-        </div>
-        </>
-    )
+const skills = ["React.js", "Next.js", "Redux Toolkit", "JavaScript", "TypeScript", "Chart.js", "REST API", "HTML5", "CSS3", "Tailwind CSS", "Material UI", "Ant Design", "GSAP", "Bootstrap", "Figma", "Git", "GitHub", "Browser DevTools"];
+
+export default function Skills() {
+  return (
+    <section className="pt-[65px] min-[701px]:pt-[95px]" aria-labelledby="skills-title">
+      <p className={eyebrow}>Tools I work with</p>
+      <h1 id="skills-title" className={pageTitle}>Skills</h1>
+      <ul className="mt-10 flex flex-wrap gap-4">
+        {skills.map((skill) => <li key={skill} className={`border px-[18px] py-2.5 ${border} ${muted}`}>{skill}</li>)}
+      </ul>
+    </section>
+  );
 }
