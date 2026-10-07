@@ -6,7 +6,7 @@ export default function Projects() {
     <section className="pt-[65px] min-[701px]:pt-[95px]">
       <p className={eyebrow}>Selected work</p>
       <h1 className={pageTitle}>Projects</h1>
-      <div className="mt-[45px]"><ProjectGrid detailed /></div>
+      <div className="mt-[45px]"><ProjectGrid /></div>
     </section>
   );
 }

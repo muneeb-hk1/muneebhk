@@ -1,7 +1,7 @@
 import { projectData } from "../data/projects";
 import { bodyCopy, border, interactive } from "../lib/styles";
 
-export default function ProjectGrid({ detailed = false }: { detailed?: boolean }) {
+export default function ProjectGrid() {
   return (
     <div className="grid grid-cols-1 gap-x-[50px] gap-y-9 min-[701px]:grid-cols-2">
       {projectData.map((project, index) => (
@@ -17,7 +17,6 @@ export default function ProjectGrid({ detailed = false }: { detailed?: boolean }
             </a>
           </h3>
           <p className={bodyCopy}>{project.des1}</p>
-          {detailed && <p className={`mt-3 ${bodyCopy}`}>{project.des2}</p>}
         </article>
       ))}
     </div>

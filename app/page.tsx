@@ -9,8 +9,8 @@ export default function Home() {
        
         <p className={eyebrow}></p>
         <h1 id="intro-title" className={pageTitle}>Hola, I’m Muneeb.</h1>
-        <p className={`max-w-[825px] text-lg leading-[29px] min-[701px]:text-xl min-[701px]:leading-[31px] ${muted}`}>
-          I turn designs into working websites, from visual editors to travel applications. My focus is on clear navigation, thoughtful details, and pages that feel comfortable on any screen.
+        <p className={`max-w-[985px] text-[16px] leading-[29px] min-[701px]:text-[18px] min-[701px]:leading-[31px] ${muted}`}>
+          I build web products that make complex tasks easier to complete. From creating a website to applying for a visa, I focus on clear steps, useful details, and an experience people can navigate with confidence.
         </p>
          <ul className="mt-[26px] mb-[30px] flex flex-wrap gap-x-[22px] gap-y-3 text-xs leading-[22px] tracking-[0.5px] text-[#838895] uppercase min-[701px]:mt-[31px] min-[701px]:mb-9 min-[701px]:gap-x-8 min-[701px]:text-sm" aria-label="Experience highlights">
           <li>Frontend Software Engineer</li>
@@ -22,10 +22,10 @@ export default function Home() {
         <h2 className={`mb-[25px] flex gap-[22px] ${eyebrow}`} id="about-title"><span>01</span> About</h2>
         <div className={`max-w-[1060px] space-y-4 text-md leading-6 ${muted}`}>
           <p>
-            I started at <strong className="font-semibold text-[#1b1b1d] [html[data-theme=dark]_&]:text-[#ededee]">Get Web India</strong> in 2023, moving from an internship into a full-time UI role. At <strong className="font-semibold text-[#1b1b1d] [html[data-theme=dark]_&]:text-[#ededee]">CSS Founder</strong>, I grew into frontend engineering, working on page builders, forms, and reusable components.
+            I began my career in 2023 as a Frontend UI Developer at <strong className="font-semibold text-[#1b1b1d] [html[data-theme=dark]_&]:text-[#ededee]">Get Web India</strong>, then joined <strong className="font-semibold text-[#1b1b1d] [html[data-theme=dark]_&]:text-[#ededee]">CSS Founder</strong> as a Frontend Software Engineer. Working on visual editors, multi-step forms, and reusable components has taught me to consider how each feature fits into the wider product.
           </p>
           <p>
-            Conversations with customers shape how I work. I listen for where they get stuck, ask questions, and use that feedback to make the next iteration easier to use.
+            I join customer conversations, turn their concerns into practical changes, and work with the team to decide what matters most. I take responsibility for seeing features through implementation and release, then use feedback to guide what comes next.
           </p>
           <a className={`inline-flex min-h-11 items-center gap-2 text-[#1b1b1d] underline decoration-[#838895] underline-offset-4 [html[data-theme=dark]_&]:text-[#ededee] ${interactive}`} href="https://muneeb-hk1.github.io/resume/muneeb_sde_resume.pdf" target="_blank" rel="noopener noreferrer">Read my résumé <span aria-hidden="true">↗</span></a>
         </div>
